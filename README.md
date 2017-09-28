@@ -1,6 +1,6 @@
 # DeLorean Project - GDG DevFest Website Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.4 and utilizes [Firebase](https://firebase.google.com) for Database, Storage, and Hosting.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) and utilizes [Firebase](https://firebase.google.com) for Database, Storage, and Hosting to create a fully functional and customizable template for your Google Developer Group's DevFest. This project has been designed to continue to be your DevFest website solution without having to create a new site or Firebase project every year. Simply update the Firebase node in the config and the site resets awaiting your next year's DevFest data. All the while preserving your previous year's data in the same Firebase project.
 
 ## Table of Contents
  - [Getting Started](#getting-started)
@@ -29,6 +29,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Contributing
 
 This project is open for contributions, suggestions, and ideas. Feel free to submit a PR and/or create an [Issue](https://github.com/neojato/DeLorean-v2/issues) with bugs, suggestions, and ideas. Stars are always welcome too!
+
+See [list of contributors](https://github.com/neojato/DeLorean-v2/graphs/contributors).
 
 ## Development Server
 
@@ -89,15 +91,19 @@ Run `firebase deploy` to deploy the `dist/` directory to Firebase Hosting.
 
 ## Profit!
 
-Congrats on launching your DevFest website! Please let me know if you used this template and will get you added to the list.
+Congrats on launching your DevFest website!
 
-## Contributors
+### Who uses the template?
 
-See [list of contributors](https://github.com/neojato/DeLorean-v2/graphs/contributors).
+Please let me know if you used this template and will get you added to the list!
 
-###### The DeLorean Project is not endorsed and/or supported by Google, the corporation.
+| Name | Name | Name |
+|------|------|------|
+| [GDG Kanasas City](https://devfestkc.com) |     |     |
 
 ### License
 
 Project is published under the [MIT license](https://github.com/neojato/DeLorean-v2/blob/master/LICENSE.md).  
 Feel free to clone and modify repo as you want, but don't forget to add reference to original authors, thanks!
+
+###### The DeLorean Project is not endorsed and/or supported by Google, the corporation.
