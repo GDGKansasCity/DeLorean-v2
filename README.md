@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) and utilizes [Firebase](https://firebase.google.com) for Database, Storage, and Hosting to create a fully functional and customizable template for your Google Developer Group's DevFest. This project has been designed to continue to be your DevFest website solution without having to create a new site or Firebase project every year. Simply update the Firebase node in the config and the site resets awaiting your next year's DevFest data. All the while preserving your previous year's data in the same Firebase project.
 
+## Features
+ - Simple site config setup
+ - Simple event schedule management
+ - Simple sponsor management
+ - Simple ticket management
+ - Simple speaker management
+ - Featured speakers section
+ - Featured venue section
+ - "My Schedule" for Attendees
+ - Session rating (coming soon!)
+
 ## Table of Contents
  - [Getting Started](#getting-started)
  - [Contributing](#contributing)
@@ -107,7 +118,7 @@ Please let me know if you used this template and will get you added to the list!
 
 | Name | Name | Name |
 |------|------|------|
-| [GDG Kanasas City](https://devfestkc.com) |     |     |
+| [DevFest KC](https://devfestkc.com) | [DevFest Muncie](https://devfestmuncie.firebaseapp.com) | [Windy City DevFest](https://windycity.devfest.io) |
 
 ### License
 
