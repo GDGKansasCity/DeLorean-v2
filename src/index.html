@@ -37,25 +37,30 @@
   <meta name="twitter:image" content="https://devfestkc.com/assets/img/devfest.png">
   <meta name="twitter:image:alt" content="DevFest KC 2018">
   <meta name="twitter:site" content="@devfestkc">
+  <meta name="twitter:image" content="assets/img/devfest.png">
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PSRF95R');
+  </script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSRF95R" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <app-root></app-root>
   <div class="loading">
     <h1>loading...</h1>
   </div>
-  <noscript>
-    <div style="border: 1px solid purple; padding: 10px">
-      <span style="color:red">JavaScript is not enabled!</span>
-    </div>
-  </noscript>
   <script>
-    !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-    (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-    r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-    }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    //// Google Analytics ////
-    ga('create', 'UA-49153111-10', 'auto');
     //// Service Worker ////
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/service-worker.js')

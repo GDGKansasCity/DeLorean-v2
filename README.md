@@ -11,7 +11,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  - Featured speakers section
  - Featured venue section
  - "My Schedule" for Attendees
- - Session rating (coming soon!)
+ - Google Tag Manager enabled
+ - Session feedback
 
 ## Table of Contents
  - [Getting Started](#getting-started)
@@ -36,6 +37,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   * Type `dist` for your public directory
   * Respond yes to configure as a single-page app
 * Copy [`firebase.config.ts.template`](https://github.com/neojato/DeLorean-v2/blob/master/src/environments/firebase.config.ts.template) to `firebase.config.ts` and populate fields with your Firebase and Google Maps Keys.
+* Update [`manifest.json`](https://github.com/neojato/DeLorean-v2/blob/master/src/manifest.json) to enable [Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/) capabilities.
 
 ## Contributing
 
@@ -54,9 +56,19 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 * From the Firebase Console, go to "Authentication" and enable the Google sign-in method.
 * Log into your site using your Google account.
 * From the Firebase Console, go to "Authentication" and copy the User UID for your email address.
-* From the Firebase Console, go to "Database" and create a parent node called `admins` then add your copied User UID as the key with a value of `true`.
+* From the Firebase Console, go to "Database", then "Real-Time Database" and create a parent node called `admins` then add your copied User UID as the key with a value of `true`.
 * (Optional) Replace `hero.png` and `devfest.png` with your own image of Your City or DevFest.
-* (Optional) Create a [Google Analytics property](https://analytics.google.com/analytics/web/#management/Settings) and add your GA Tracking ID to `line 41` in [`index.html`](https://github.com/neojato/DeLorean-v2/blob/master/src/index.html#L41).
+
+### Google Tag Manager Setup (Optional)
+
+* Create an Account and a Container on [Google Tag Manager](https://tagmanager.google.com).
+* Once created, you will receive the tracking snippet.
+  * Replace each instance of `GTM-XXXXXXX` within `index.html` with your tracking ID following the same pattern.
+* Now you are able to create Tags for:
+  * [Google Analytics](https://support.google.com/analytics/answer/6163791)
+  * [Facebook Pixel](https://www.facebook.com/business/help/1021909254506499)
+  * [Custom HTML](https://support.google.com/tagmanager/answer/6107167)
+  * And [many, many more](https://support.google.com/tagmanager/answer/6106924)!
 
 ### Site Config
 
@@ -72,7 +84,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 * Click the "Speakers" link in the navbar and then click on the "Create Speaker" button to add a speaker.
 * Rinse and repeat for however many speakers you have for your event.
-* Check the "Featured" option to have that speaker also display on the homepage (it is recommended to set only 4  as featured speakers to maintain styling at this time).
+* Check the "Featured" option to have that speaker also display on the homepage in the "Featured Speakers" section.
 * **NOTE:** The uploaded profile images get stored in Firebase Storage if you need to retrieve them later.
 
 ### Schedule Management
@@ -102,11 +114,11 @@ Run `sh tools/build.sh` to generate an optimized production build of the project
 
 ## Deploy
 
-Run `firebase deploy` to deploy the `dist/` directory to Firebase Hosting.
+Run `firebase deploy` to deploy the `dist/` directory to Firebase Hosting and `functions/` directory to Firebase Functions.
 
 ### Simple Production Deploy
 
-Run `sh tools/deploy.sh` to generate an optimized production build and deploy the `dist/` directory to Firebase Hosting (along with database rules & Cloud Functions).
+Run `sh tools/deploy.sh` to generate an optimized production build and deploy the `dist/` directory to Firebase Hosting (along with Firebase Real-Time Database rules & Firebase Functions).
 
 ## Profit!
 
@@ -119,11 +131,11 @@ Please let me know if you used this template and will get you added to the list!
 | Name | Name | Name |
 |------|------|------|
 | [DevFest KC](https://devfestkc.com) | [DevFest Muncie](https://devfestmuncie.firebaseapp.com) | [Windy City DevFest](https://windycity.devfest.io) |
-| [DevFest Nairobi](https://devfestnairobi.gdgkenya.org) |  |  |
+| [DevFest Nairobi](https://devfestnairobi.gdgkenya.org) | [Eldoret Techweek](https://sites.gdgmoi.com) |  |
 
 ### License
 
 Project is published under the [MIT license](https://github.com/neojato/DeLorean-v2/blob/master/LICENSE.md).  
-Feel free to clone and modify repo as you want, but don't forget to add reference to original authors, thanks!
+Feel free to clone and modify repo as you want, but don't forget to keep the reference to original authors, thanks!
 
 ###### The DeLorean Project is not endorsed and/or supported by Google, the corporation.
